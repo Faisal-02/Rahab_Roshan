@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:buttons_tabbar/buttons_tabbar.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:rehab_roshan_project/features/Home/widget/custom_card.dart';
+import 'package:rehab_roshan_project/features/Arena//widget/custom_card.dart';
 
 class CustomTabBarPage extends StatefulWidget {
   @override
@@ -22,15 +22,14 @@ class _CustomTabBarPageState extends State<CustomTabBarPage> {
               padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [Text("الفئات", style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold)), Text("عرض الكل", style: TextStyle(color: Colors.red, fontWeight: FontWeight.bold)),
+                children: [Text("الفئات", style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold)), Text("عرض الكل", style: TextStyle(color: Color(0xFF5E5492), fontWeight: FontWeight.bold)),
                 ],
               ),
             ),
-
             ButtonsTabBar(
-              backgroundColor: Color(0xFFF5EAEA),
+              backgroundColor: Color(0xFFEFE6F4),
               unselectedBackgroundColor: Color(0xFFF5F5F5),
-              labelStyle: TextStyle(color: Color(0xFFD24C3E), fontWeight: FontWeight.bold),
+              labelStyle: TextStyle(color: Color(0xFF5E5492), fontWeight: FontWeight.bold),
               unselectedLabelStyle: TextStyle(color: Color(0xFF565656)),
               borderColor: Color(0xFFD24C3E),
               borderWidth: 1,
@@ -39,15 +38,159 @@ class _CustomTabBarPageState extends State<CustomTabBarPage> {
               // height: 60.h,
               height: 60,
               tabs: [
-                Tab(icon: Icon(Icons.apps),text: "رياضي"),
-                Tab(icon: Icon(Icons.sports), text: "رياضي"),
-                Tab(icon: Icon(Icons.sports), text: "رياضي"),
-                Tab(icon: Icon(Icons.sports), text: "رياضي"),
-                Tab(icon: Icon(Icons.sports), text: "رياضي"),
-                Tab(icon: Icon(Icons.sports), text: "رياضي"),
+                Tab(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Container(
+                        height: 40.h,
+                        width: 40.w,
+                        decoration: BoxDecoration(
+                          color: const Color(0xFFEFE6F4),
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                        child: const Center(
+                          child: Icon(
+                            Icons.menu_rounded,
+                            color: Color(0xFF5E5492),
+                          ),
+                        ),
+                      ),
+                      SizedBox(height: 4.h),
+                      const Text("الكل", style: TextStyle(color: Color(0xFF5E5492),
+                        ),
+                      )
+                    ],
+                  ),
+                ),
+
+                Tab(child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Container(
+                        height: 40.h,
+                        width: 40.w,
+                        decoration: BoxDecoration(
+                          color: const Color(0xFFEFE6F4),
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                        child: const Center(
+                          child: Icon(
+                            Icons.menu_rounded,
+                            color: Color(0xFF5E5492),
+                          ),
+                        ),
+                      ),
+                      SizedBox(height: 4.h),
+                      const Text("رياضي", style: TextStyle(color: Color(0xFF5E5492),
+                      ),
+                      )
+                    ],
+                  ),
+                ),
+                Tab(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Container(
+                        height: 40.h,
+                        width: 40.w,
+                        decoration: BoxDecoration(
+                          color: const Color(0xFFEFE6F4),
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                        child: const Center(
+                          child: Icon(
+                            Icons.menu_rounded,
+                            color: Color(0xFF5E5492),
+                          ),
+                        ),
+                      ),
+                      SizedBox(height: 4.h),
+                      const Text("رياضي", style: TextStyle(color: Color(0xFF5E5492),
+                      ),
+                      )
+                    ],
+                  ),
+                ),
+                Tab(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Container(
+                        height: 40.h,
+                        width: 40.w,
+                        decoration: BoxDecoration(
+                          color: const Color(0xFFEFE6F4),
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                        child: const Center(
+                          child: Icon(
+                            Icons.menu_rounded,
+                            color: Color(0xFF5E5492),
+                          ),
+                        ),
+                      ),
+                      SizedBox(height: 4.h),
+                      const Text("رياضي", style: TextStyle(color: Color(0xFF5E5492),
+                      ),
+                      )
+                    ],
+                  ),
+                ),
+                Tab(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Container(
+                        height: 40.h,
+                        width: 40.w,
+                        decoration: BoxDecoration(
+                          color: const Color(0xFFEFE6F4),
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                        child: const Center(
+                          child: Icon(
+                            Icons.menu_rounded,
+                            color: Color(0xFF5E5492),
+                          ),
+                        ),
+                      ),
+                      SizedBox(height: 4.h),
+                      const Text("رياضي", style: TextStyle(color: Color(0xFF5E5492),
+                      ),
+                      )
+                    ],
+                  ),
+                ),
+                Tab(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Container(
+                        height: 40.h,
+                        width: 40.w,
+                        decoration: BoxDecoration(
+                          color: const Color(0xFFEFE6F4),
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                        child: const Center(
+                          child: Icon(
+                            Icons.menu_rounded,
+                            color: Color(0xFF5E5492),
+                          ),
+                        ),
+                      ),
+                      SizedBox(height: 4.h),
+                      const Text("رياضي", style: TextStyle(color: Color(0xFF5E5492),
+                      ),
+                      )
+                    ],
+                  ),
+                ),
               ],
             ),
-
+            SizedBox(height: 20,),
             Expanded(
               child: IndexedStack(
                 // index: selectedIndex,

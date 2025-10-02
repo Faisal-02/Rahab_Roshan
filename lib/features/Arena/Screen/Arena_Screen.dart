@@ -1,21 +1,23 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:rehab_roshan_project/features/Home/widget/tab_bar.dart';
-import '../widget/custom_card.dart';
-
-class HomePage extends StatefulWidget {
+import 'package:rehab_roshan_project/features/Arena//widget/tab_bar.dart';
+class ArenaScreen extends StatefulWidget {
   @override
-  State<HomePage> createState() => _HomePageState();
+  State<ArenaScreen> createState() => _ArenaScreenState();
 }
-class _HomePageState extends State<HomePage> {
+class _ArenaScreenState extends State<ArenaScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(title: Text("الميدان",style: TextStyle(fontFamily: 'IBMPlexSansArabic-Bold',fontSize: 18.sp,fontWeight: FontWeight.w700),),
+        centerTitle: true,
+      ),
+
       body: SafeArea(
         child: Column(
           children: [
         Padding(
-        padding: EdgeInsets.symmetric(horizontal: 16.w,vertical: 16.h),
+        padding: EdgeInsets.symmetric(horizontal: 44.w,vertical: 16.h),
               child: TextField(
                 decoration: InputDecoration(
                   hintText: "ابحث هنا",
@@ -30,7 +32,8 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
         ),
-            Expanded(child: CustomTabBarPage())
+            Expanded(
+                child: CustomTabBarPage())
          ],
           
         ),

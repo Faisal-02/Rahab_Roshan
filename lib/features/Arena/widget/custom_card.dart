@@ -1,39 +1,3 @@
-// import 'package:flutter/material.dart';
-// import 'package:flutter_screenutil/flutter_screenutil.dart';
-// class Custom_Card extends StatelessWidget {
-//   final String titele;
-//   final String description;
-//   final String image;
-//   const Custom_Card({super.key,required this.titele,required this.description,required this.image});
-//
-//   @override
-//   Widget build(BuildContext context) {
-//     return Container(
-//       width: 181.w,
-//       height: 281.h,
-//       child: Card(
-//         child: Column(
-//           children: [
-//             Image.asset(image ,width:  165.w,height: 163.h),
-//             Text(titele,style: TextStyle(fontFamily: 'IBM_Plex_Sans_Arabic',fontWeight: FontWeight.w700,fontSize: 14.sp),),
-//             Text(description,style: TextStyle(fontFamily: 'IBM_Plex_Sans_Arabic',fontWeight: FontWeight.w400,fontSize: 12.sp,color: Color(0xFF6E6E6E)),),
-//             SizedBox(height: 10.h),
-//           ElevatedButton(onPressed:(){} ,
-//               style: ElevatedButton.styleFrom(
-//                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4.r)),
-//                 backgroundColor: Color(0xFFD24C3E),
-//               ),
-//               child: Text("الانضمام للبطولة",style: TextStyle(color: Color(0xFFFEFEFE),fontFamily:'IBMPlexSansArabic-Regular',fontWeight: FontWeight.w400 ,fontSize: 14.sp),))
-//           ],
-//         ),
-//
-//       ),
-//     );
-//   }
-//
-// }
-
-
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 class CustomCard extends StatelessWidget {
@@ -99,7 +63,7 @@ class CustomCard extends StatelessWidget {
               ElevatedButton(onPressed: (){},
                   style: ElevatedButton.styleFrom(
                     shape:RoundedRectangleBorder(borderRadius: BorderRadius.circular(4.r)) ,
-                    backgroundColor: Color(0xFFD24C3E),
+                    backgroundColor: Color(0xFF5E5492),
                   ),
                   child: Text("انضم للبطولة",style: TextStyle(color: Color(0xFFFEFEFE),fontFamily:'IBMPlexSansArabic-Regular',fontWeight: FontWeight.w400 ,fontSize: 14.sp),))
 
