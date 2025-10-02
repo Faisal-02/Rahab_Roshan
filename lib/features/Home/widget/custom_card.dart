@@ -33,9 +33,8 @@
 //
 // }
 
-
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
+
 class CustomCard extends StatelessWidget {
   final String titele;
   final String description;
@@ -69,7 +68,8 @@ class CustomCard extends StatelessWidget {
           elevation: 0,
           margin: EdgeInsets.zero,
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(10),),
+            borderRadius: BorderRadius.circular(10),
+          ),
           clipBehavior: Clip.antiAlias,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -78,8 +78,7 @@ class CustomCard extends StatelessWidget {
                 flex: 3,
                 child: ClipRRect(
                   borderRadius: BorderRadius.vertical(top: Radius.circular(10)),
-                  child: Image.asset(image, width:165, height: 163,
-                  ),
+                  child: Image.asset(image, width: 165, height: 163),
                 ),
               ),
 
@@ -89,21 +88,36 @@ class CustomCard extends StatelessWidget {
                   color: Colors.white,
                   padding: EdgeInsets.all(12),
                   child: Center(
-                    child:
-                    Text(titele,style: TextStyle(fontSize: 15, fontFamily: 'IBMPlexSansArabic-Bold', color: Color(0xFF0E2937)
-                      ),),
-
+                    child: Text(
+                      titele,
+                      style: TextStyle(
+                        fontSize: 15,
+                        fontFamily: 'IBMPlexSansArabic-Bold',
+                        color: Color(0xFF0E2937),
+                      ),
+                    ),
                   ),
                 ),
               ),
-              ElevatedButton(onPressed: (){},
-                  style: ElevatedButton.styleFrom(
-                    shape:RoundedRectangleBorder(borderRadius: BorderRadius.circular(4.r)) ,
-                    backgroundColor: Color(0xFFD24C3E),
+              ElevatedButton(
+                onPressed: () {},
+                style: ElevatedButton.styleFrom(
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(4.r),
                   ),
-                  child: Text("انضم للبطولة",style: TextStyle(color: Color(0xFFFEFEFE),fontFamily:'IBMPlexSansArabic-Regular',fontWeight: FontWeight.w400 ,fontSize: 14.sp),))
-
-              ],
+                  backgroundColor: Color(0xFFD24C3E),
+                ),
+                child: Text(
+                  "انضم للبطولة",
+                  style: TextStyle(
+                    color: Color(0xFFFEFEFE),
+                    fontFamily: 'IBMPlexSansArabic-Regular',
+                    fontWeight: FontWeight.w400,
+                    fontSize: 14.sp,
+                  ),
+                ),
+              ),
+            ],
           ),
         ),
       ),
