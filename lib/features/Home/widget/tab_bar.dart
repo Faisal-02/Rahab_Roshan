@@ -22,7 +22,21 @@ class _CustomTabBarPageState extends State<CustomTabBarPage> {
               padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [Text("الفئات", style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold)), Text("عرض الكل", style: TextStyle(color: Colors.red, fontWeight: FontWeight.bold)),
+                children: [
+                  Text(
+                    "الفئات",
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  Text(
+                    "عرض الكل",
+                    style: TextStyle(
+                      color: Colors.red,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
                 ],
               ),
             ),
@@ -30,7 +44,10 @@ class _CustomTabBarPageState extends State<CustomTabBarPage> {
             ButtonsTabBar(
               backgroundColor: Color(0xFFF5EAEA),
               unselectedBackgroundColor: Color(0xFFF5F5F5),
-              labelStyle: TextStyle(color: Color(0xFFD24C3E), fontWeight: FontWeight.bold),
+              labelStyle: TextStyle(
+                color: Color(0xFFD24C3E),
+                fontWeight: FontWeight.bold,
+              ),
               unselectedLabelStyle: TextStyle(color: Color(0xFF565656)),
               borderColor: Color(0xFFD24C3E),
               borderWidth: 1,
@@ -39,7 +56,7 @@ class _CustomTabBarPageState extends State<CustomTabBarPage> {
               // height: 60.h,
               height: 60,
               tabs: [
-                Tab(icon: Icon(Icons.apps),text: "رياضي"),
+                Tab(icon: Icon(Icons.apps), text: "رياضي"),
                 Tab(icon: Icon(Icons.sports), text: "رياضي"),
                 Tab(icon: Icon(Icons.sports), text: "رياضي"),
                 Tab(icon: Icon(Icons.sports), text: "رياضي"),
@@ -60,14 +77,44 @@ class _CustomTabBarPageState extends State<CustomTabBarPage> {
                     childAspectRatio: 0.70,
                     padding: EdgeInsets.symmetric(horizontal: 16),
                     children: [
-                      CustomCard(titele: 'بطولة سباق القمة', description: 'سباق مليء بالتشويق من البداية حتى آخر متر، واللقب ينتظر الأسرع', image: 'assets/images/photo1.jpeg',),
-                      CustomCard(titele: 'بطولة سباق القمة', description: 'سباق مليء بالتشويق من البداية حتى آخر متر، واللقب ينتظر الأسرع', image: 'assets/images/photo1.jpeg',),
-                      CustomCard(titele: 'بطولة سباق القمة', description: 'سباق مليء بالتشويق من البداية حتى آخر متر، واللقب ينتظر الأسرع', image: 'assets/images/photo1.jpeg',),
-                      CustomCard(titele: 'بطولة سباق القمة', description: 'سباق مليء بالتشويق من البداية حتى آخر متر، واللقب ينتظر الأسرع', image: 'assets/images/photo1.jpeg',),
-                      CustomCard(titele: 'بطولة سباق القمة', description: 'سباق مليء بالتشويق من البداية حتى آخر متر، واللقب ينتظر الأسرع', image: 'assets/images/photo1.jpeg',),
-                      CustomCard(titele: 'بطولة سباق القمة', description: 'سباق مليء بالتشويق من البداية حتى آخر متر، واللقب ينتظر الأسرع', image: 'assets/images/photo1.jpeg',)
-
-                    ],),
+                      CustomCard(
+                        titele: 'بطولة سباق القمة',
+                        description:
+                            'سباق مليء بالتشويق من البداية حتى آخر متر، واللقب ينتظر الأسرع',
+                        image: 'assets/images/photo1.jpeg',
+                      ),
+                      CustomCard(
+                        titele: 'بطولة سباق القمة',
+                        description:
+                            'سباق مليء بالتشويق من البداية حتى آخر متر، واللقب ينتظر الأسرع',
+                        image: 'assets/images/photo1.jpeg',
+                      ),
+                      CustomCard(
+                        titele: 'بطولة سباق القمة',
+                        description:
+                            'سباق مليء بالتشويق من البداية حتى آخر متر، واللقب ينتظر الأسرع',
+                        image: 'assets/images/photo1.jpeg',
+                      ),
+                      CustomCard(
+                        titele: 'بطولة سباق القمة',
+                        description:
+                            'سباق مليء بالتشويق من البداية حتى آخر متر، واللقب ينتظر الأسرع',
+                        image: 'assets/images/photo1.jpeg',
+                      ),
+                      CustomCard(
+                        titele: 'بطولة سباق القمة',
+                        description:
+                            'سباق مليء بالتشويق من البداية حتى آخر متر، واللقب ينتظر الأسرع',
+                        image: 'assets/images/photo1.jpeg',
+                      ),
+                      CustomCard(
+                        titele: 'بطولة سباق القمة',
+                        description:
+                            'سباق مليء بالتشويق من البداية حتى آخر متر، واللقب ينتظر الأسرع',
+                        image: 'assets/images/photo1.jpeg',
+                      ),
+                    ],
+                  ),
 
                   // Sport Tab
                   GridView.count(
@@ -120,28 +167,6 @@ class _CustomTabBarPageState extends State<CustomTabBarPage> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // import 'package:flutter/material.dart';
 // import 'package:flutter_screenutil/flutter_screenutil.dart';
