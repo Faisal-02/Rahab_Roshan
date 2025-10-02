@@ -5,7 +5,7 @@ class AppTheme {
   ThemeData appLightTheme() {
     return ThemeData(
       textTheme: TextTheme(
-        // Heading 1,2, 3, 4, and 5
+        // Heading 1, 2, and 3
         headlineLarge: TextStyle(
           fontSize: 26,
           color: Colors.black,
@@ -27,6 +27,7 @@ class AppTheme {
           fontWeight: FontWeight.bold,
         ),
 
+        // Heading 4, and 5
         displayLarge: TextStyle(
           fontSize: 20,
           color: Colors.black,
