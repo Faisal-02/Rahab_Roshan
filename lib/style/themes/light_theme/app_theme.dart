@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rehab_roshan_project/style/colors/light_mode_colors/app_colors.dart';
 
 class AppTheme {
   // Text theme
@@ -6,6 +7,13 @@ class AppTheme {
     return ThemeData(
       // the default font for all texts
       fontFamily: "IBM_Arabic",
+
+      // Switch Theme
+      switchTheme: SwitchThemeData(
+        trackOutlineColor: WidgetStatePropertyAll(Colors.transparent),
+        thumbColor: WidgetStatePropertyAll(AppColors.primaryOneNormal),
+        trackColor: WidgetStatePropertyAll(AppColors.primaryOneLightHover),
+      ),
 
       textTheme: TextTheme(
         // Heading 1, 2, and 3
