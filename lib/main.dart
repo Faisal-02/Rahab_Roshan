@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:rehab_roshan_project/features/Arena/widget/Custom_navbottom.dart';
+import 'package:rehab_roshan_project/features/arena/widget/Custom_navbottom.dart';
 import 'package:rehab_roshan_project/style/themes/light_theme/app_theme.dart';
 
 void main() {

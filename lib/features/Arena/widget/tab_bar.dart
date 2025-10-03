@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:buttons_tabbar/buttons_tabbar.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:rehab_roshan_project/features/Arena//widget/custom_card.dart';
+import 'package:rehab_roshan_project/features/arena/widget/custom_card.dart';
 
 class CustomTabBarPage extends StatefulWidget {
+  const CustomTabBarPage({super.key});
+
   @override
   _CustomTabBarPageState createState() => _CustomTabBarPageState();
 }

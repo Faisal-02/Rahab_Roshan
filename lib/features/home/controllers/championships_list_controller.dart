@@ -1,4 +1,4 @@
-import 'package:rehab_roshan_project/features/Arena/widget/custom_card.dart';
+import 'package:rehab_roshan_project/features/arena/widget/custom_card.dart';
 
 class ChampionshipsListController {
   List<CustomCard> champoionshipsListWidget = [
