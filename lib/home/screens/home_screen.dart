@@ -1,11 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:intl/intl.dart';
+import 'package:rehab_roshan_project/features/Arena/widget/custom_card.dart';
+import 'package:rehab_roshan_project/home/controllers/champion_platform_controller.dart';
+import 'package:rehab_roshan_project/home/controllers/championships_list_controller.dart';
 import 'package:rehab_roshan_project/home/widgets/home_welcom_section_widget.dart';
+import 'package:rehab_roshan_project/home/widgets/today_championship_widget.dart';
+import 'package:rehab_roshan_project/home/widgets/winners_platform_widget.dart';
 import 'package:rehab_roshan_project/style/colors/light_mode_colors/app_colors.dart';
+import 'package:rehab_roshan_project/style/ctx.dart';
 
 class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
-
+  HomeScreen({super.key});
+  final ChampionPlatformController _controllerPlatform =
+      ChampionPlatformController();
+  final ChampionshipsListController _championshipsListController =
+      ChampionshipsListController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -14,6 +22,7 @@ class HomeScreen extends StatelessWidget {
           padding: const EdgeInsets.all(16.0),
           child: SingleChildScrollView(
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 // The welcoming top section
                 HomeWelcomSectionWidget(),
@@ -21,81 +30,139 @@ class HomeScreen extends StatelessWidget {
                 SizedBox(height: 24),
 
                 // Today's champion section
-                ChampoinDateWidget(),
+                TodayChampionshipWidget(),
+
+                SizedBox(height: 24),
+                Text(
+                  "خريطة المجتمع السكني",
+                  style: Theme.of(context).textTheme.displayMedium!.copyWith(
+                    color: AppColors.secondaryNormal,
+                  ),
+                ),
+
+                SizedBox(height: 16),
+
+                //TODO The community map image, i will try ro make it a real map later
+                Container(
+                  width: 370,
+                  height: 240,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(8),
+                    border: Border.all(style: BorderStyle.none),
+                  ),
+                  clipBehavior: Clip.hardEdge,
+                  child: Image.asset("assets/images/community_map.png"),
+                ),
+
+                SizedBox(height: 24),
+
+                Text(
+                  "قائمة المتصدرين",
+                  style: Theme.of(context).textTheme.displayMedium!.copyWith(
+                    color: AppColors.secondaryNormal,
+                  ),
+                ),
+
+                SizedBox(height: 16),
+
+                WinnersPlatformWidget(),
+
+                SizedBox(height: 24),
+
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      "البطولات الحديثة",
+                      style: context.displayMedium!.copyWith(
+                        color: AppColors.secondaryNormal,
+                      ),
+                    ),
+
+                    Text(
+                      "عرض الكل",
+                      style: context.titleSmall!.copyWith(
+                        color: AppColors.primaryOneNormal,
+                      ),
+                    ),
+                  ],
+                ),
+
+                SizedBox(height: 16),
+
+                SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Row(
+                    spacing: 12,
+                    children:
+                        _championshipsListController.champoionshipsListWidget,
+                  ),
+                ),
+
+                SizedBox(height: 24),
+
+                Container(
+                  width: 370,
+                  height: 154,
+                  decoration: BoxDecoration(
+                    color: AppColors.naturalNormal,
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16.35),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        SizedBox(height: 18),
+                        Text(
+                          "ما لقيت البطولة اللي تدور عليها؟",
+                          style: context.displayMedium,
+                        ),
+                        SizedBox(height: 8),
+                        Text(
+                          "اقترح بطولة جديدة وخلينا نوسع الميدان معك، ونفتح المجال لمنافسات تلهمك وتلهم غيرك",
+                          style: context.titleSmall!.copyWith(
+                            color: AppColors.naturalDarker,
+                          ),
+                        ),
+
+                        SizedBox(height: 4),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            ElevatedButton(
+                              style: ElevatedButton.styleFrom(
+                                backgroundColor: AppColors.naturalLightActive,
+                                fixedSize: Size(188, 26),
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadiusGeometry.circular(
+                                    4,
+                                  ),
+                                  side: BorderSide(
+                                    color: AppColors.primaryOneNormalHover,
+                                    style: BorderStyle.solid,
+                                  ),
+                                ),
+                              ),
+                              onPressed: () {},
+                              child: Text(
+                                "اقترح الآن",
+                                style: context.bodySmall!.copyWith(
+                                  color: AppColors.primaryOneNormalHover,
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
               ],
             ),
           ),
         ),
       ),
-    );
-  }
-}
-
-class ChampoinDateWidget extends StatelessWidget {
-  const ChampoinDateWidget({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Stack(
-      children: [
-        Container(
-          width: 370,
-          height: 73,
-          decoration: BoxDecoration(color: AppColors.secondaryYellowLight),
-          child: Row(
-            children: [
-              Container(
-                width: 63,
-                height: 57,
-                padding: EdgeInsets.symmetric(horizontal: 12),
-                decoration: BoxDecoration(
-                  color: Colors.red,
-                  borderRadius: BorderRadius.circular(12),
-                ),
-                child: Center(
-                  child: Column(
-                    children: [
-                      Text(
-                        DateTime.now().day.toString(),
-                        style: Theme.of(context).textTheme.headlineMedium!
-                            .copyWith(color: AppColors.naturalLight),
-                      ),
-                      Text(
-                        DateFormat.MMM().format(DateTime.now()).toString(),
-                        style: Theme.of(context).textTheme.bodyMedium!.copyWith(
-                          color: AppColors.naturalLight,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-
-              // between the date container and the texts
-              SizedBox(width: 11),
-
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    "بطولة اليوم",
-                    style: Theme.of(context).textTheme.bodyMedium!.copyWith(
-                      color: AppColors.naturalDarkHover,
-                    ),
-                  ),
-                  Text(
-                    "بطولة سباق القمة ",
-                    style: Theme.of(
-                      context,
-                    ).textTheme.bodyMedium!.copyWith(color: Colors.red),
-                  ),
-                ],
-              ),
-            ],
-          ),
-        ),
-      ],
     );
   }
 }

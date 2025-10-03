@@ -10,12 +10,12 @@ class HomeWelcomSectionWidget extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // TODO comeback to solve the ellopsis.
             Text(
               overflow: TextOverflow.ellipsis,
               "أهلاً بك مجدداً",
-              style: Theme.of(context).textTheme.headlineSmall!.copyWith(
+              style: Theme.of(context).textTheme.bodySmall!.copyWith(
                 color: AppColors.naturalDarkHover,
               ),
             ),
@@ -23,7 +23,7 @@ class HomeWelcomSectionWidget extends StatelessWidget {
             Text(
               "سلطان إبراهيم",
               style: Theme.of(context).textTheme.headlineSmall!.copyWith(
-                color: AppColors.primaryDarkHover,
+                color: AppColors.primaryOneNormalHover,
               ),
             ),
           ],
