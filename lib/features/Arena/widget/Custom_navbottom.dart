@@ -43,9 +43,6 @@ class _NavState extends State<Nav> {
             _currentIndex = index;
           });
         },
-        unselectedItemColor: Color(0xFFB8B8B8),
-        selectedItemColor: Color(0xFF554C83),
-        backgroundColor: Colors.white,
       ),
       body: _widgetOption[_currentIndex],
     );
