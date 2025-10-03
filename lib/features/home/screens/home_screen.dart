@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:rehab_roshan_project/features/Arena/widget/custom_card.dart';
-import 'package:rehab_roshan_project/features/home/controllers/champion_platform_controller.dart';
 import 'package:rehab_roshan_project/features/home/controllers/championships_list_controller.dart';
 import 'package:rehab_roshan_project/features/home/widgets/home_welcom_section_widget.dart';
 import 'package:rehab_roshan_project/features/home/widgets/today_championship_widget.dart';
@@ -10,8 +8,7 @@ import 'package:rehab_roshan_project/style/ctx.dart';
 
 class HomeScreen extends StatelessWidget {
   HomeScreen({super.key});
-  final ChampionPlatformController _controllerPlatform =
-      ChampionPlatformController();
+
   final ChampionshipsListController _championshipsListController =
       ChampionshipsListController();
   @override
