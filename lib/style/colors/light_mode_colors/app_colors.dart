@@ -117,4 +117,6 @@ class AppColors {
   static const Color secondaryYellowDarkHover = Color(0xFF925627);
   static const Color secondaryYellowDarkActive = Color(0xFF6F471E);
   static const Color secondaryYellowDarker = Color(0xFF553717);
+
+  static const Color black_500 = Color(0xff1B1D1C);
 }
