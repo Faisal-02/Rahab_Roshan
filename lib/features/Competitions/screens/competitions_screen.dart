@@ -4,6 +4,8 @@ import 'package:rehab_roshan_project/features/Competitions/widgets/Custom_compet
 import 'package:rehab_roshan_project/style/colors/light_mode_colors/app_colors.dart';
 
 class CompetitionsScreen extends StatefulWidget {
+  const CompetitionsScreen({super.key});
+
   @override
   State<CompetitionsScreen> createState() => _CompetitionsScreenState();
 }
@@ -56,6 +58,7 @@ class _CompetitionsScreenState extends State<CompetitionsScreen> {
             SizedBox(height: 14),
           ],
         ),
+        SizedBox(height: 35),
 
         Row(children: [SizedBox(width: 16), Text("البطولات القادمة ")]),
         SizedBox(height: 12),
