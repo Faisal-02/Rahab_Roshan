@@ -20,12 +20,7 @@ class _NavState extends State<Nav> {
   final List<Widget> _widgetOption = [
     HomeScreen(),
     ArenaScreen(),
-    CustomeHeroic(
-      titele: 'بطولة سباق القمة ',
-      subtitel: '0000/00/00',
-      color: AppColors.secondaryYellowNormalHover,
-      dateTime: "0000/00/00",
-    ),
+    Scaffold(),
     ProfileScreen(),
   ];
 

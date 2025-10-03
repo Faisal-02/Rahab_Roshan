@@ -15,6 +15,8 @@ class AppTheme {
         trackColor: WidgetStatePropertyAll(AppColors.primaryOneLightHover),
       ),
 
+      scaffoldBackgroundColor: Color(0xffFFFFFF),
+
       textTheme: TextTheme(
         // Heading 1, 2, and 3
         headlineLarge: TextStyle(fontSize: 26, fontWeight: FontWeight.bold),
