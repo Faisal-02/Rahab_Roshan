@@ -1,4 +1,4 @@
-import 'package:rehab_roshan_project/home/widgets/winner_avatar_widget.dart';
+import 'package:rehab_roshan_project/features/home/widgets/winner_avatar_widget.dart';
 
 class ChampionPlatformController {
   List<Map<String, WinnerAvatarWidget>> winnersList = [
