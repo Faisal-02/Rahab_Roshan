@@ -3,8 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:rehab_roshan_project/features/arena/widget/tab_bar.dart';
 
 class ArenaScreen extends StatefulWidget {
-  const ArenaScreen({super.key, required this.screenTitle});
-  final String screenTitle;
+  const ArenaScreen({super.key});
   @override
   State<ArenaScreen> createState() => _ArenaScreenState();
 }

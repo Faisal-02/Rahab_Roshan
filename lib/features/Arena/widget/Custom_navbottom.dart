@@ -14,12 +14,12 @@ class Nav extends StatefulWidget {
 
 class _NavState extends State<Nav> {
   int _currentIndex = 0;
-  NavBarController _navBarController = NavBarController();
+  final NavBarController _navBarController = NavBarController();
   final List<Widget> _widgetOption = [
     HomeScreen(),
-    ArenaScreen(screenTitle: "الميدان"),
+    ArenaScreen(),
     Scaffold(),
-    ProfileScreen(screenTitle: "حسابي"),
+    ProfileScreen(),
   ];
 
   @override
