@@ -15,6 +15,18 @@ class AppTheme {
         trackColor: WidgetStatePropertyAll(AppColors.primaryOneLightHover),
       ),
 
+      scaffoldBackgroundColor: Color(0xffFFFFFF),
+      appBarTheme: AppBarThemeData(
+        backgroundColor: Color(0xffFFFFFF),
+        surfaceTintColor: Colors.white,
+      ),
+      bottomNavigationBarTheme: BottomNavigationBarThemeData(
+        backgroundColor: Colors.white,
+        selectedItemColor: AppColors.primaryOneNormal,
+        unselectedItemColor: Colors.grey,
+        type: BottomNavigationBarType.fixed,
+      ),
+
       textTheme: TextTheme(
         // Heading 1, 2, and 3
         headlineLarge: TextStyle(fontSize: 26, fontWeight: FontWeight.bold),

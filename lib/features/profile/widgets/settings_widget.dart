@@ -39,12 +39,16 @@ class _MyWidgetState extends State<SettingsWidget> {
         style: context.titleSmall!.copyWith(color: AppColors.naturalDarkHover),
       ),
       trailing: widget.isSwitch
-          ? Switch(
-              value: notificationState,
-              onChanged: (value) {
-                notificationState = value;
-                setState(() {});
-              },
+          ? SizedBox(
+              width: 20,
+              height: 10,
+              child: Switch(
+                value: notificationState,
+                onChanged: (value) {
+                  notificationState = value;
+                  setState(() {});
+                },
+              ),
             )
           : Image.asset(widget.trailingIcon),
     );

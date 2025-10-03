@@ -85,9 +85,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     thickness: 0.3,
                   ),
                   SettingsWidget(
-                    mainTitle: "الجوائز",
-                    subTitle: "اطلع على جوائزك",
-                    leadingIconPath: "assets/images/prise_icon.png",
+                    mainTitle: " المفضلة",
+                    subTitle: "استعرض البطولات المفضلة بالنسبة لك",
+                    leadingIconPath: "assets/images/fav_championship_icon.png",
                     trailingIcon: "assets/images/enter_setting_icon.png",
                   ),
                   Divider(
@@ -96,9 +96,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     thickness: 0.3,
                   ),
                   SettingsWidget(
-                    mainTitle: "الجوائز",
-                    subTitle: "اطلع على جوائزك",
-                    leadingIconPath: "assets/images/prise_icon.png",
+                    mainTitle: "الإشعارات",
+                    subTitle: "فعل إشعارات التطبيق ليصلك كل جديد",
+                    leadingIconPath: "assets/images/Notification_Icon.png",
                     isSwitch: true,
                     trailingIcon: "assets/images/enter_setting_icon.png",
                   ),
@@ -118,9 +118,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
               child: Column(
                 children: [
                   SettingsWidget(
-                    mainTitle: "الجوائز",
-                    subTitle: "اطلع على جوائزك",
-                    leadingIconPath: "assets/images/prise_icon.png",
+                    mainTitle: "المساعدة والدعم",
+                    subTitle: "دليلك في كل خطوة",
+                    leadingIconPath: "assets/images/help_and_support_icon.png",
                     trailingIcon: "assets/images/enter_setting_icon.png",
                   ),
                   Divider(
@@ -129,9 +129,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     thickness: 0.3,
                   ),
                   SettingsWidget(
-                    mainTitle: "الجوائز",
-                    subTitle: "اطلع على جوائزك",
-                    leadingIconPath: "assets/images/prise_icon.png",
+                    mainTitle: "تواصل معنا",
+                    subTitle: "نسمعك دائما",
+                    leadingIconPath: "assets/images/about_app_icon.png",
                     trailingIcon: "assets/images/enter_setting_icon.png",
                   ),
                   Divider(
@@ -140,15 +140,16 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     thickness: 0.3,
                   ),
                   SettingsWidget(
-                    mainTitle: "الجوائز",
-                    subTitle: "اطلع على جوائزك",
+                    mainTitle: "عن التطبيق",
+                    subTitle: "تعرف علينا أكثر",
                     leadingIconPath: "assets/images/prise_icon.png",
-                    isSwitch: true,
                     trailingIcon: "assets/images/enter_setting_icon.png",
                   ),
                 ],
               ),
             ),
+
+            SizedBox(height: 33),
           ],
         ),
       ),
