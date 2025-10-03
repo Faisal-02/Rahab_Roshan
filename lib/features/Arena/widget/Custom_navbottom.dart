@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:rehab_roshan_project/features/Arena/Screen/Arena_Screen.dart';
 // import 'package:rehab_roshan_project/features/heroics/Screen/heroics_screen.dart';
-import 'package:rehab_roshan_project/home/screens/home_screen.dart';
+import 'package:rehab_roshan_project/features/home/screens/home_screen.dart';
 
 class Nav extends StatefulWidget {
   @override

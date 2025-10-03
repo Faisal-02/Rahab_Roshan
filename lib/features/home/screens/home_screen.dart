@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:rehab_roshan_project/features/Arena/widget/custom_card.dart';
-import 'package:rehab_roshan_project/home/controllers/champion_platform_controller.dart';
-import 'package:rehab_roshan_project/home/controllers/championships_list_controller.dart';
-import 'package:rehab_roshan_project/home/widgets/home_welcom_section_widget.dart';
-import 'package:rehab_roshan_project/home/widgets/today_championship_widget.dart';
-import 'package:rehab_roshan_project/home/widgets/winners_platform_widget.dart';
+import 'package:rehab_roshan_project/features/home/controllers/champion_platform_controller.dart';
+import 'package:rehab_roshan_project/features/home/controllers/championships_list_controller.dart';
+import 'package:rehab_roshan_project/features/home/widgets/home_welcom_section_widget.dart';
+import 'package:rehab_roshan_project/features/home/widgets/today_championship_widget.dart';
+import 'package:rehab_roshan_project/features/home/widgets/winners_platform_widget.dart';
 import 'package:rehab_roshan_project/style/colors/light_mode_colors/app_colors.dart';
 import 'package:rehab_roshan_project/style/ctx.dart';
 

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:rehab_roshan_project/home/controllers/champion_platform_controller.dart';
+import 'package:rehab_roshan_project/features/home/controllers/champion_platform_controller.dart';
 import 'package:rehab_roshan_project/style/colors/light_mode_colors/app_colors.dart';
 
 class WinnersPlatformWidget extends StatefulWidget {
