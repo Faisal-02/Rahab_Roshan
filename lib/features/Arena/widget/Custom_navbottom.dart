@@ -5,8 +5,8 @@ import 'package:rehab_roshan_project/features/arena/Screen/Arena_Screen.dart';
 // import 'package:rehab_roshan_project/features/heroics/Screen/heroics_screen.dart';
 import 'package:rehab_roshan_project/features/home/screens/home_screen.dart';
 import 'package:rehab_roshan_project/features/profile/screens/profile_screen.dart';
+
 // import 'package:rehab_roshan_project/features/test_code/test_screen.dart';
-import '../../../style/colors/light_mode_colors/app_colors.dart';
 class Nav extends StatefulWidget {
   const Nav({super.key});
 
