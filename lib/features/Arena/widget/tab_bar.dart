@@ -9,15 +9,12 @@ class CustomTabBarPage extends StatefulWidget {
   @override
   _CustomTabBarPageState createState() => _CustomTabBarPageState();
 }
-
 class _CustomTabBarPageState extends State<CustomTabBarPage> {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
       length: 6,
-      child: Scaffold(
-        backgroundColor: Colors.white,
-        body: Column(
+      child:  Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
@@ -357,7 +354,6 @@ class _CustomTabBarPageState extends State<CustomTabBarPage> {
             ),
           ],
         ),
-      ),
     );
   }
 }
