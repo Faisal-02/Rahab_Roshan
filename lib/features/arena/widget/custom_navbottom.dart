@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:rehab_roshan_project/features/Arena/controllers/nav_bar_controller.dart';
 import 'package:rehab_roshan_project/features/Competitions/screens/competitions_screen.dart';
-import 'package:rehab_roshan_project/features/arena/Screen/Arena_Screen.dart';
+import 'package:rehab_roshan_project/features/arena/Screen/arena_screen.dart';
 import 'package:rehab_roshan_project/features/home/screens/home_screen.dart';
+import 'package:rehab_roshan_project/features/pre_challenge/screens/prechallenge_screen.dart';
 import 'package:rehab_roshan_project/features/profile/screens/profile_screen.dart';
+import 'package:rehab_roshan_project/features/result/screens/result_screen.dart';
+
 // import 'package:rehab_roshan_project/features/test_code/test_screen.dart';
 class Nav extends StatefulWidget {
   const Nav({super.key});
