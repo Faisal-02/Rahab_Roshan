@@ -11,6 +11,7 @@ class HomeScreen extends StatelessWidget {
 
   final ChampionshipsListController _championshipsListController =
       ChampionshipsListController();
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(

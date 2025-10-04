@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
+import 'package:rehab_roshan_project/features/home/controllers/navigate_details_controller.dart';
 import 'package:rehab_roshan_project/style/colors/light_mode_colors/app_colors.dart';
 import 'package:rehab_roshan_project/style/ctx.dart';
 
 class TodayChampionshipWidget extends StatelessWidget {
-  const TodayChampionshipWidget({super.key});
+  TodayChampionshipWidget({super.key});
+
+  final NavigateToDetailsController _navigateToDetailsController =
+      NavigateToDetailsController();
 
   @override
   Widget build(BuildContext context) {
@@ -71,7 +75,9 @@ class TodayChampionshipWidget extends StatelessWidget {
               ),
               Spacer(),
               ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  _navigateToDetailsController.toEventDetails(context);
+                },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: AppColors.primaryOneNormal,
                   minimumSize: Size(87, 24),
