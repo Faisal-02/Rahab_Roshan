@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:rehab_roshan_project/features/Competitions/widgets/Custom_competitions.dart';
+import 'package:rehab_roshan_project/features/Competitions/widgets/custom_competitions.dart';
 import 'package:rehab_roshan_project/style/colors/light_mode_colors/app_colors.dart';
 
 class CompetitionsScreen extends StatefulWidget {
