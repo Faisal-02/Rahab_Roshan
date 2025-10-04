@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rehab_roshan_project/features/event_details/controllers/navigate_precompitition_controller.dart';
 import 'package:rehab_roshan_project/features/event_details/widgets/championship_description_widget.dart';
 import 'package:rehab_roshan_project/features/event_details/widgets/championship_time.dart';
 import 'package:rehab_roshan_project/features/event_details/widgets/event_details_thumbnail_widget.dart';
@@ -7,7 +8,10 @@ import 'package:rehab_roshan_project/style/colors/light_mode_colors/app_colors.d
 import 'package:rehab_roshan_project/style/ctx.dart';
 
 class ChampionshipDetailsScreen extends StatelessWidget {
-  const ChampionshipDetailsScreen({super.key});
+  ChampionshipDetailsScreen({super.key});
+
+  final NavigatePrecompititionController _navigatePrecompititionController =
+      NavigatePrecompititionController();
 
   @override
   Widget build(BuildContext context) {
@@ -85,7 +89,11 @@ class ChampionshipDetailsScreen extends StatelessWidget {
 
                     Center(
                       child: ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          _navigatePrecompititionController.navToPrecompitition(
+                            context,
+                          );
+                        },
                         style: ButtonStyle(
                           minimumSize: WidgetStatePropertyAll(
                             Size(370, 50.999996185302734),
