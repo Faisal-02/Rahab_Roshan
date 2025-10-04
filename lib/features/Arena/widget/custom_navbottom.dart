@@ -2,12 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:rehab_roshan_project/features/Arena/controllers/nav_bar_controller.dart';
 import 'package:rehab_roshan_project/features/Competitions/screens/competitions_screen.dart';
 import 'package:rehab_roshan_project/features/arena/Screen/Arena_Screen.dart';
-// import 'package:rehab_roshan_project/features/heroics/Screen/heroics_screen.dart';
 import 'package:rehab_roshan_project/features/home/screens/home_screen.dart';
-import 'package:rehab_roshan_project/features/pre_challenge/screens/prechallenge_screen.dart';
 import 'package:rehab_roshan_project/features/profile/screens/profile_screen.dart';
 // import 'package:rehab_roshan_project/features/test_code/test_screen.dart';
-import '../../../style/colors/light_mode_colors/app_colors.dart';
 class Nav extends StatefulWidget {
   const Nav({super.key});
 
@@ -21,8 +18,7 @@ class _NavState extends State<Nav> {
   final List<Widget> _widgetOption = [
     HomeScreen(),
     ArenaScreen(),
-    // Prechallenge(),
-     CompetitionsScreen(),
+    CompetitionsScreen(),
     ProfileScreen(),
   ];
 
@@ -30,7 +26,7 @@ class _NavState extends State<Nav> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: _navBarController.getScreensTitle(context, _currentIndex),
+        // title: _navBarController.getScreensTitle(context, _currentIndex),
       ),
       bottomNavigationBar: BottomNavigationBar(
         items: [

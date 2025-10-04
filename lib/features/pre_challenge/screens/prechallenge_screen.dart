@@ -68,7 +68,7 @@ class Prechallenge extends StatelessWidget {
                 child: Text(
                   "بدء السباق", style: context.displayLarge!.copyWith(color:AppColors.naturalLight),
                 ),
-              ),            ],
+              ),],
           ),
         ),
       ),
