@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:rehab_roshan_project/features/arena/widget/custom_navbottom.dart';
 import 'package:rehab_roshan_project/style/colors/light_mode_colors/app_colors.dart';
 import 'package:rehab_roshan_project/style/ctx.dart';
 class CustomButtons extends StatelessWidget {
@@ -14,7 +15,9 @@ class CustomButtons extends StatelessWidget {
       return Padding(
         padding: EdgeInsets.symmetric(horizontal: 16),
         child: ElevatedButton(
-          onPressed: () {},
+          onPressed: () {
+            Navigator.push(context, MaterialPageRoute(builder: (context)=>Nav()));
+          },
           style: ElevatedButton.styleFrom(
             minimumSize: Size(370.w, 48.h),
             shape: RoundedRectangleBorder(
@@ -52,7 +55,7 @@ class CustomButtons extends StatelessWidget {
 
           SizedBox(width: 8),
          ElevatedButton(onPressed: (){
-
+           Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>Nav()));
          },
              style: ElevatedButton.styleFrom(
                minimumSize: Size(128.w, 48.h),

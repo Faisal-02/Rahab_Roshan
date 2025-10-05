@@ -127,7 +127,7 @@ class _CustomTabBarPageState extends State<CustomTabBarPage> {
                       ),
                       SizedBox(height: 4.h),
                       const Text(
-                        "رياضي",
+                        "ثقافي",
                         style: TextStyle(color: Color(0xFF5E5492)),
                       ),
                     ],
@@ -153,7 +153,7 @@ class _CustomTabBarPageState extends State<CustomTabBarPage> {
                       ),
                       SizedBox(height: 4.h),
                       const Text(
-                        "رياضي",
+                        "ذهني",
                         style: TextStyle(color: Color(0xFF5E5492)),
                       ),
                     ],
@@ -179,7 +179,7 @@ class _CustomTabBarPageState extends State<CustomTabBarPage> {
                       ),
                       SizedBox(height: 4.h),
                       const Text(
-                        "رياضي",
+                        "حركي",
                         style: TextStyle(color: Color(0xFF5E5492)),
                       ),
                     ],
@@ -205,7 +205,7 @@ class _CustomTabBarPageState extends State<CustomTabBarPage> {
                       ),
                       SizedBox(height: 4.h),
                       const Text(
-                        "رياضي",
+                        "تراثي",
                         style: TextStyle(color: Color(0xFF5E5492)),
                       ),
                     ],
@@ -227,10 +227,10 @@ class _CustomTabBarPageState extends State<CustomTabBarPage> {
                     padding: EdgeInsets.symmetric(horizontal: 16),
                     children: [
                       CustomCard(
-                        titele: 'بطولة سباق القمة',
+                        titele: 'بطولة الشطرنج',
                         description:
-                            'سباق مليء بالتشويق من البداية حتى آخر متر، واللقب ينتظر الأسرع',
-                        image: 'assets/images/photo1.jpeg',
+                            'اختبر ذكاءك واستراتيجيتك في لعبة التفكير الأولى عالميًا!',
+                        image: 'assets/images/play1.jpg',
                         cardWidth: 164.5,
                         cardhiaght: 163,
                         timerhiaght: 29.h,
@@ -243,7 +243,7 @@ class _CustomTabBarPageState extends State<CustomTabBarPage> {
                         titele: 'بطولة سباق القمة',
                         description:
                             'سباق مليء بالتشويق من البداية حتى آخر متر، واللقب ينتظر الأسرع',
-                        image: 'assets/images/photo1.jpeg',
+                        image: 'assets/images/play2.png',
                         cardWidth: 164.5,
                         cardhiaght: 163,
                         timerhiaght: 29.h,
@@ -253,10 +253,10 @@ class _CustomTabBarPageState extends State<CustomTabBarPage> {
                         timerText: '06:00:00',
                       ),
                       CustomCard(
-                        titele: 'بطولة سباق القمة',
+                        titele: 'بطولة المعرفة الوطنية',
                         description:
-                            'سباق مليء بالتشويق من البداية حتى آخر متر، واللقب ينتظر الأسرع',
-                        image: 'assets/images/photo1.jpeg',
+                        'قيس مدى معرفتك بتاريخ وطنك وإنجازاته في منافسة حماسية.',
+                        image: 'assets/images/play3.jpg',
                         cardWidth: 164.5,
                         cardhiaght: 163,
                         timerhiaght: 29.h,
@@ -266,10 +266,10 @@ class _CustomTabBarPageState extends State<CustomTabBarPage> {
                         timerText: '30:00:00',
                       ),
                       CustomCard(
-                        titele: 'بطولة سباق القمة',
+                        titele: 'بطولة التصوير الفوتوغرافي',
                         description:
-                            'سباق مليء بالتشويق من البداية حتى آخر متر، واللقب ينتظر الأسرع',
-                        image: 'assets/images/photo1.jpeg',
+                            'التقط أجمل لحظة بعدستك ونافس بإبداعك في عيون الحكّام والجمهور.',
+                        image: 'assets/images/play4.jpg',
                         cardWidth: 164.5,
                         cardhiaght: 163,
                         timerhiaght: 29.h,
@@ -279,10 +279,10 @@ class _CustomTabBarPageState extends State<CustomTabBarPage> {
                         timerText: '54:00:00',
                       ),
                       CustomCard(
-                        titele: 'بطولة سباق القمة',
+                        titele: 'بطولة البلوت',
                         description:
-                            'سباق مليء بالتشويق من البداية حتى آخر متر، واللقب ينتظر الأسرع',
-                        image: 'assets/images/photo1.jpeg',
+                            'أجواء تجمع اللاعبين على طاولة واحدة في اللعبة الأشهر بالسعودية.',
+                        image: 'assets/images/play5.jpg',
                         cardWidth: 164.5,
                         cardhiaght: 163,
                         timerhiaght: 29.h,
@@ -292,10 +292,10 @@ class _CustomTabBarPageState extends State<CustomTabBarPage> {
                         timerText: '60:00:00',
                       ),
                       CustomCard(
-                        titele: 'بطولة سباق القمة',
+                        titele: 'بطولة الرسم',
                         description:
-                            'سباق مليء بالتشويق من البداية حتى آخر متر، واللقب ينتظر الأسرع',
-                        image: 'assets/images/photo1.jpeg',
+                            'عبّر عن خيالك بالألوان وشاركنا إبداعك في لوحات تبهر الجميع.',
+                        image: 'assets/images/play6.jpg',
                         cardWidth: 164.5,
                         cardhiaght: 163,
                         timerhiaght: 29.h,
@@ -303,6 +303,32 @@ class _CustomTabBarPageState extends State<CustomTabBarPage> {
                         buttonWidth: 164.5,
                         buttonHeight: 25,
                         timerText: '66:00:00',
+                      ),
+                      CustomCard(
+                        titele: 'بطولة السباحة',
+                        description:
+                        'انطلق بقوة ونافس على اللقب في سباقات تجمع السرعة واللياقة.',
+                        image: 'assets/images/play7.jpg',
+                        cardWidth: 164.5,
+                        cardhiaght: 163,
+                        timerhiaght: 29.h,
+                        timerWidth: 67.w,
+                        buttonWidth: 164.5,
+                        buttonHeight: 25,
+                        timerText: '75:00:00',
+                      ),
+                      CustomCard(
+                        titele: 'بطولة الفنون الشعبية',
+                        description:
+                        'عيش التراث من جديد وأبهر الحضور بأداء يعكس أصالة الفنون السعودية..',
+                        image: 'assets/images/play8.jpg',
+                        cardWidth: 164.5.w,
+                        cardhiaght:163.h,
+                        timerhiaght: 29.h,
+                        timerWidth: 67.w,
+                        buttonWidth: 164.5,
+                        buttonHeight: 25,
+                        timerText: '79:00:00',
                       ),
                     ],
                   ),
