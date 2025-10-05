@@ -21,6 +21,56 @@ It aims to foster an engaging environment that promotes community interaction, a
 - Figma – For UI/UX design and wireframing.  
 - GitHub – For version control and collaborative development.
 
+
+## 📂 Project Structure:
+This project follows a Feature-Based Architecture. Each part of the User Interface (UI) and the related Control Logic (Logic) for a specific feature resides within its own dedicated folder. This organization facilitates code separation, readability, and independent development.
+
+File Hierarchy
+.
+├── lib/
+│   ├── features/
+│   │   ├── arena/
+│   │   │   ├── controllers/  
+│   │   │   ├── screen/       
+│   │   │   └── widget/       
+│   │   ├── championship_start/
+│   │   │   ├── screens/
+│   │   │   └── widgets/
+│   │   ├── competitions/
+│   │   │   ├── controllers/
+│   │   │   ├── screens/
+│   │   │   └── widgets/
+│   │   ├── event_details/
+│   │   │   ├── controllers/
+│   │   │   ├── screens/
+│   │   │   └── widgets/
+│   │   ├── home/
+│   │   │   ├── controllers/
+│   │   │   ├── screens/
+│   │   │   └── widgets/
+│   │   ├── onboarding/
+│   │   │   ├── screens/
+│   │   │   └── widgets/
+│   │   ├── pre_challenge/
+│   │   │   ├── controllers/
+│   │   │   ├── screens/
+│   │   │   └── widgets/
+│   │   ├── profile/
+│   │   │   ├── screens/
+│   │   │   └── widgets/
+│   │   └── result/
+│   │       ├── controllers/
+│   │       ├── screens/
+│   │       └── widgets/
+│   ├── splash/
+│   │   └── screens/
+│   └── style/                  # General app styles and assets
+│       ├── colors/             # Color definitions
+│       └── themes/             # Theme definitions
+│   ├── ctx.dart                # (Context or Helper functions file - placeholder)
+│   └── main.dart              
+└── ios/       
+
   ## 🚀 Installation & Run
 1.Clone the repository:
 
