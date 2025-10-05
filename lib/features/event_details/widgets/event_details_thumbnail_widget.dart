@@ -13,9 +13,10 @@ class EventDetailsThumbnailWidget extends StatelessWidget {
       width: 402,
       height: 510,
       child: Stack(
+        clipBehavior: Clip.none,
         children: [
           // The event image
-          Image.asset(eventImagePath),
+          Center(child: Image.asset(eventImagePath)),
           //This row only for the top section, timer and leave button.
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,

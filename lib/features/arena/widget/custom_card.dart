@@ -1,142 +1,139 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:rehab_roshan_project/style/colors/light_mode_colors/app_colors.dart';
 import 'package:rehab_roshan_project/style/ctx.dart';
 
 class CustomCard extends StatelessWidget {
+  const CustomCard({
+    super.key,
+    required this.titele,
+    required this.description,
+    required this.image,
+    this.cardWidth = 180.5,
+    this.cardhiaght = 281,
+
+    this.timerhiaght = 29,
+    this.timerWidth = 67,
+    required this.timerText,
+    this.isLiked = false,
+    this.buttonWidth = 164.5,
+    this.buttonHeight = 25,
+    this.imageWidth = 164.5,
+    this.imageHeight = 163,
+    this.likeWidth = 44,
+    this.likeHeight = 44,
+  });
+
   final String titele;
   final String description;
   final String image;
+  final double imageWidth;
+  final double imageHeight;
   final double cardWidth;
   final double cardhiaght;
   final double timerWidth;
   final double timerhiaght;
   final double buttonWidth;
   final double buttonHeight;
-  final String timerText; // timer number
+  final String timerText;
   final bool isLiked;
-
-  const CustomCard({
-    super.key,
-    required this.titele,
-    required this.description,
-    required this.image,
-    required this.cardWidth,
-    required this.cardhiaght,
-    required this.timerhiaght,
-    required this.timerWidth,
-    required this.timerText,
-    this.isLiked = false,
-    required this.buttonWidth,
-    required this.buttonHeight,
-  });
+  final double likeWidth;
+  final double likeHeight;
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      // onTap: () {
-      //   Navigator.push(
-      //     context,
-      //     MaterialPageRoute(
-      //       builder: (context) => PassDataShimmer(
-      //         title: titele,
-      //         image: image,
-      //         description: description,
-      //       ),
-      //     ),
-      //   );
-      // },
-      child: Container(
-        width: cardWidth,
-        height: cardhiaght,
-        padding: EdgeInsets.zero,
-        decoration: BoxDecoration(
-          shape: BoxShape.rectangle,
-          color: Color(0xffFEFEFE),
-        ),
+    return Container(
+      width: cardWidth,
+      height: cardhiaght,
+      padding: EdgeInsets.all(8),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(8),
+        color: Color(0xffFEFEFE),
+        boxShadow: [
+          BoxShadow(
+            blurRadius: 52.9,
+            color: Color(0xff000000).withValues(alpha: 0.04),
+            offset: Offset(0, 13),
+          ),
+        ],
+      ),
+      child: Stack(
+        clipBehavior: Clip.none,
+        children: [
+          Container(
+            width: imageWidth,
+            height: imageHeight,
+            padding: EdgeInsets.all(10),
+            decoration: BoxDecoration(borderRadius: BorderRadius.circular(8)),
 
-        child: Column(
-          children: [
-            Expanded(
-              flex: 3,
+            child: Image.asset(image, fit: BoxFit.fill),
+          ),
+          Positioned(
+            left: 10,
+            top: 10,
+            child: Container(
+              width: timerWidth,
+              height: timerhiaght,
+              padding: EdgeInsets.all(4),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(4),
+                color: AppColors.secondaryYellowLightActive,
+              ),
               child: Stack(
+                clipBehavior: Clip.none,
                 children: [
-                  ClipRRect(
-                    borderRadius: BorderRadius.vertical(
-                      top: Radius.circular(10),
-
-                    ),
-                    child: Image.asset(image, width: 164.5, height: 163,fit: BoxFit.fill,),
-
-
-                  ),
-                  Positioned(
-                    bottom: 8.h,
-                    left: 17.w,
-                    child: Container(
-                      padding: EdgeInsets.all(4.w),
-                      decoration: BoxDecoration(shape: BoxShape.circle),
-                      child: Icon(
-                        isLiked ? Icons.favorite : Icons.favorite_border,
-                        color: Colors.black,
-                        size: 24.sp,
-                      ),
+                  Text(
+                    textAlign: TextAlign.center,
+                    timerText,
+                    style: context.titleSmall!.copyWith(
+                      color: AppColors.secondaryNormal,
                     ),
                   ),
+
                   Positioned(
-                    left: 20,
-                    child: Container(
-                      padding: EdgeInsets.symmetric(horizontal: 4),
-                      width: timerWidth,
-                      height: timerhiaght,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(4),
-                        color: Color(0xFFFCE1C4),
-                      ),
-                      child: Text(
-                        timerText,
-                        style: TextStyle(
-                          fontWeight: FontWeight.w400,
-                          fontSize: 14.sp,
-                          fontFamily: 'IBMPlexSansArabic-Regular',
-                        ),
-                      ),
+                    bottom: -113,
+                    left: 0,
+                    child: Image.asset(
+                      width: likeWidth,
+                      height: likeHeight,
+                      "assets/images/fav_button.png",
                     ),
                   ),
                 ],
               ),
             ),
-            Container(
-              color: Colors.white,
-              padding: EdgeInsets.all(12),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    titele,
-                    style: TextStyle(
-                      fontSize: 15,
-                      fontFamily: 'IBMPlexSansArabic-Bold',
-                      color: Color(0xFF0E2937),
-                    ),
-                  ),
-                  Text(
-                    description,
-                    style: TextStyle(
-                      fontSize: 12.sp,
-                      fontFamily: 'IBMPlexSansArabic-Regular',
-                      color: Colors.grey[600],
-                    ),
-                    maxLines: 2,
-                  ),
-                ],
+          ),
+
+          Positioned(
+            bottom: 60,
+            right: 8,
+            child: Text(
+              titele,
+              style: context.titleMedium!.copyWith(
+                color: AppColors.secondaryNormal,
               ),
             ),
-            ElevatedButton(
+          ),
+
+          Positioned(
+            bottom: 32,
+            right: 8,
+            child: Text(
+              description,
+              style: context.labelMedium!.copyWith(
+                color: AppColors.naturalDarkActive,
+                fontSize: 10,
+              ),
+            ),
+          ),
+
+          Positioned(
+            bottom: -12,
+            child: ElevatedButton(
               onPressed: () {},
               style: ElevatedButton.styleFrom(
-                fixedSize: Size(buttonWidth, buttonHeight),
+                minimumSize: Size(buttonWidth, buttonHeight),
                 shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(4.r),
+                  borderRadius: BorderRadius.circular(4),
                 ),
                 backgroundColor: Color(0xFF5E5492),
               ),
@@ -145,8 +142,8 @@ class CustomCard extends StatelessWidget {
                 style: context.titleMedium!.copyWith(color: Color(0xFFFEFEFE)),
               ),
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }

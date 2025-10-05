@@ -16,47 +16,48 @@ class _CompetitionsScreenState extends State<CompetitionsScreen> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            SizedBox(
-              width: 314,
-              height: 44,
-              child: TextField(
-                decoration: InputDecoration(
-                  hintText: "ابحث هنا",
-                  hintStyle: TextStyle(
-                    fontSize: 16.sp,
-                    color: Color(0xFFB8B8B8),
-                  ),
-                  prefixIcon: Icon(Icons.search, color: Colors.grey),
-                  suffixIcon: Image.asset(
-                    "assets/images/mic-01.png",
-                    color: Color(0xFFB8B8B8),
-                  ),
-                  // contentPadding: EdgeInsets.symmetric(vertical: 10.h),
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(8),
-                    borderSide: BorderSide(color: Color(0xFF565656)),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 16.0),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Expanded(
+                child: TextField(
+                  decoration: InputDecoration(
+                    hintText: "ابحث هنا",
+                    hintStyle: TextStyle(
+                      fontSize: 16.sp,
+                      color: AppColors.naturalDark,
+                    ),
+                    prefixIcon: Image.asset("assets/images/Search_icon.png"),
+
+                    suffixIcon: Image.asset(
+                      "assets/images/mic-01.png",
+                      color: AppColors.naturalDarker,
+                    ),
+                    contentPadding: EdgeInsets.symmetric(vertical: 10.h),
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(8),
+                      borderSide: BorderSide(color: Color(0xFF565656)),
+                    ),
                   ),
                 ),
               ),
-            ),
-            SizedBox(width: 20.w),
-            //Drower
-            Container(
-              decoration: BoxDecoration(
-                color: Color(0xFF6A5ACD),
-                borderRadius: BorderRadius.circular(6.r),
+
+              SizedBox(width: 12),
+              Container(
+                width: 44,
+                height: 44,
+
+                decoration: BoxDecoration(
+                  color: AppColors.primaryOneNormal,
+                  borderRadius: BorderRadius.circular(8),
+                ),
+                child: Image.asset("assets/images/drawer_icon.png"),
               ),
-              child: IconButton(
-                icon: Icon(Icons.menu, color: Colors.white, size: 28.w),
-                onPressed: () {},
-                padding: EdgeInsets.symmetric(horizontal: 8.w, vertical: 8.h),
-              ),
-            ),
-            SizedBox(height: 14),
-          ],
+              SizedBox(height: 14),
+            ],
+          ),
         ),
         SizedBox(height: 35),
 

@@ -23,7 +23,15 @@ class AppTheme {
       bottomNavigationBarTheme: BottomNavigationBarThemeData(
         backgroundColor: Colors.white,
         selectedItemColor: AppColors.primaryOneNormal,
-        unselectedItemColor: Colors.grey,
+        unselectedItemColor: AppColors.naturalDark,
+        selectedLabelStyle: TextStyle(
+          fontSize: 12,
+          fontWeight: FontWeight.bold,
+        ),
+        unselectedLabelStyle: TextStyle(
+          fontSize: 12,
+          fontWeight: FontWeight.w400,
+        ),
         type: BottomNavigationBarType.fixed,
       ),
 

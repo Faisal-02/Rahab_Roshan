@@ -19,9 +19,10 @@ class ChampionshipDetailsScreen extends StatelessWidget {
       body: SafeArea(
         child: SingleChildScrollView(
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               EventDetailsThumbnailWidget(
-                eventImagePath: "assets/images/winners_platform.png",
+                eventImagePath: "assets/images/marthone.jpg",
               ),
 
               // This is the section under the event image

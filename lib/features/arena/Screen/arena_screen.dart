@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:rehab_roshan_project/features/arena/widget/tab_bar.dart';
+import 'package:rehab_roshan_project/style/colors/light_mode_colors/app_colors.dart';
 
 class ArenaScreen extends StatefulWidget {
   const ArenaScreen({super.key});
@@ -14,8 +15,9 @@ class _ArenaScreenState extends State<ArenaScreen> {
     return Column(
       children: [
         Padding(
-          padding: EdgeInsets.symmetric(horizontal: 44.w, vertical: 16.h),
+          padding: EdgeInsets.symmetric(horizontal: 16),
           child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Expanded(
                 child: TextField(
@@ -23,12 +25,13 @@ class _ArenaScreenState extends State<ArenaScreen> {
                     hintText: "ابحث هنا",
                     hintStyle: TextStyle(
                       fontSize: 16.sp,
-                      color: Color(0xFFB8B8B8),
+                      color: AppColors.naturalDark,
                     ),
-                    prefixIcon: Icon(Icons.search, color: Colors.grey),
+                    prefixIcon: Image.asset("assets/images/Search_icon.png"),
+
                     suffixIcon: Image.asset(
                       "assets/images/mic-01.png",
-                      color: Color(0xFFB8B8B8),
+                      color: AppColors.naturalDarker,
                     ),
                     contentPadding: EdgeInsets.symmetric(vertical: 10.h),
                     border: OutlineInputBorder(
@@ -38,17 +41,16 @@ class _ArenaScreenState extends State<ArenaScreen> {
                   ),
                 ),
               ),
-              SizedBox(width: 20),
+              SizedBox(width: 12),
               Container(
+                width: 44,
+                height: 44,
+
                 decoration: BoxDecoration(
-                  color: Color(0xFF6A5ACD),
-                  borderRadius: BorderRadius.circular(6.r),
+                  color: AppColors.primaryOneNormal,
+                  borderRadius: BorderRadius.circular(8),
                 ),
-                child: IconButton(
-                  icon: Icon(Icons.menu, color: Colors.white, size: 28.w),
-                  onPressed: () {},
-                  padding: EdgeInsets.symmetric(horizontal: 8.w, vertical: 8.h),
-                ),
+                child: Image.asset("assets/images/drawer_icon.png"),
               ),
             ],
           ),

@@ -38,7 +38,7 @@ class ChampionshipTime extends StatelessWidget {
                             .copyWith(color: AppColors.naturalLight),
                       ),
                       Text(
-                        DateTime.now().add(Duration(days: 1)).day.toString(),
+                        DateTime.now().day.toString(),
                         style: Theme.of(context).textTheme.headlineSmall!
                             .copyWith(color: AppColors.naturalLight),
                       ),
