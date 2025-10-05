@@ -25,7 +25,7 @@ It aims to foster an engaging environment that promotes community interaction, a
 ## 📂 Project Structure:
 This project follows a Feature-Based Architecture. Each part of the User Interface (UI) and the related Control Logic (Logic) for a specific feature resides within its own dedicated folder. This organization facilitates code separation, readability, and independent development.
 
-File Hierarchy
+###File Hierarchy
 .
 ├── lib/
 │   ├── features/
