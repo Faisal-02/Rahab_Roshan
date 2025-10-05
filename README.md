@@ -81,12 +81,10 @@ This project follows a **Feature-Based Architecture**. Each part of the User Int
 
 ## 🚀 Installation & Run
 
-1.Clone the repository:
-
-git clone https://github.com/username/Rahab_Roshan.git
+1.Clone the repository.
 
 2.Navigate to the project directory:
-cd Rahab_Roshan
+cd rehab_roshan_project
 
 3.Install dependencies:
 flutter pub get
