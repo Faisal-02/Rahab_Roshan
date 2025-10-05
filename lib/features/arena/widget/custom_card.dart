@@ -63,8 +63,11 @@ class CustomCard extends StatelessWidget {
                   ClipRRect(
                     borderRadius: BorderRadius.vertical(
                       top: Radius.circular(10),
+
                     ),
-                    child: Image.asset(image, width: 164.5, height: 163),
+                    child: Image.asset(image, width: 164.5, height: 163,fit: BoxFit.fill,),
+
+
                   ),
                   Positioned(
                     bottom: 8.h,
@@ -74,7 +77,7 @@ class CustomCard extends StatelessWidget {
                       decoration: BoxDecoration(shape: BoxShape.circle),
                       child: Icon(
                         isLiked ? Icons.favorite : Icons.favorite_border,
-                        color: Colors.white,
+                        color: Colors.black,
                         size: 24.sp,
                       ),
                     ),
