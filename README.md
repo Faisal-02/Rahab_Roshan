@@ -23,14 +23,25 @@ It aims to foster an engaging environment that promotes community interaction, a
 
   ## 🚀 Installation & Run
 1.Clone the repository:
-   ```bash
    git clone https://github.com/username/Rahab_Roshan.git
+   
 2.Navigate to the project directory:
      cd Rahab_Roshan
+     
 3.Install dependencies:
   flutter pub get
+  
 4.Run the app on an emulator or device:
    flutter run
+
+
+
+   ##Design Prototype:
+
+  The app’s interface was designed using Figma.
+  You can view the full design here:
+    https://www.figma.com/design/pNpBtxtcsPIVYVBX1mYENi/Roshen-Rehab?node-id=71-1662&t=I2Pa2xBsgdrsiM6J-1 
+   
 ##📸 App Screenshots:
 
 
