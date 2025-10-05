@@ -23,7 +23,8 @@ It aims to foster an engaging environment that promotes community interaction, a
 
   ## 🚀 Installation & Run
 1.Clone the repository:
-   git clone https://github.com/username/Rahab_Roshan.git
+
+git clone https://github.com/username/Rahab_Roshan.git
    
 2.Navigate to the project directory:
      cd Rahab_Roshan
