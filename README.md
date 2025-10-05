@@ -1,5 +1,5 @@
 # Rahab_Roshan
-Rahab Roshan** is a mobile application developed using **Flutter.  
+Rahab Roshan is a mobile application developed using **Flutter.  
 It aims to showcase various **events and competitions** held within the residential community — including **sports, cultural, and recreational activities**.  
 The project seeks to build an active community and enhance the **quality of life**, in alignment with **Saudi Vision 2030**.
 
